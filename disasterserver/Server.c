@@ -788,7 +788,6 @@ bool server_cmd_handle(Server* server, unsigned long hash, PeerData* v, String* 
 			PacketCreate(&pack, SERVER_LOBBY_CHANGELOBBY);
 			PacketWrite(&pack, packet_write32, g_config.port + ind - 1);
 			RAssert(packet_send(v->peer, &pack, true));
-			RAssert(server_disconnect(server, v->peer, DR_DONTREPORT, NULL));
 			break;
 		}
 
