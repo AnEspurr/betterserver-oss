@@ -388,7 +388,9 @@ bool lobby_state_handle(PeerData* v, Packet* packet)
 			Info("%s " LOG_RST "(id %d): %s", v->nickname.value, v->id, msg.value);
 			if(!ignore)
 				server_broadcast_ex(v->server, packet, true, v->id);
-			
+				char buffer[512];
+				snprintf(buffer, 512, msg.value, v->nickname.value);
+				server_broadcast_msg(v->server, buffer);
 			break;
 		}
 
