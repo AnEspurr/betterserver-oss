@@ -100,6 +100,7 @@ set(SOURCES
 	"maps/HideAndSeek.c"
 	"maps/WoodDream.c"  
 	"maps/Marijuna.c" 
+	"maps/PrisonTower.c"
 )
 
 if(ANDROID)

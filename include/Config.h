@@ -30,7 +30,7 @@ typedef struct
 	bool	log_file;
 	bool	anticheat;
 	bool	pride;
-	bool 	map_list[20];
+	bool 	map_list[21];
 	Mutex	map_list_lock;
 
 	char 	motd[256];

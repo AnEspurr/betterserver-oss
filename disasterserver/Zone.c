@@ -1013,6 +1013,10 @@ Zone room_pricelessfreedom[] =
  { 1464, 488, BLOCK_SIZE * 1.140625, BLOCK_SIZE * 0.4375 },
 };
 
+Zone room_prisontower[] = {
+  {0, 600, BLOCK_SIZE * 1.140625, BLOCK_SIZE * 0.1345},
+};
+
 Zone room_ravinemist[] =
 {
  { -16, 0, BLOCK_SIZE * 0.125, BLOCK_SIZE * 15.398438 },
@@ -1340,7 +1344,7 @@ Zone room_youcantrun[] =
  { 832, 960, BLOCK_SIZE * 1, BLOCK_SIZE * 0.39062476 },
 };
 
-Zone* g_mapZone[21] =
+Zone* g_mapZone[22] =
 {
   room_hideandseek2,
   room_ravinemist,
@@ -1362,10 +1366,11 @@ Zone* g_mapZone[21] =
   room_haundream,
   room_weedzone,
   room_marijuna,
+  room_prisontower,
   room_fartzone
 };
 
-size_t g_mapZoneSize[21] =
+size_t g_mapZoneSize[22] =
 {
   ARRAY_SIZE(room_hideandseek2),
   ARRAY_SIZE(room_ravinemist),
@@ -1387,6 +1392,7 @@ size_t g_mapZoneSize[21] =
   ARRAY_SIZE(room_haundream),
   ARRAY_SIZE(room_weedzone),
   ARRAY_SIZE(room_marijuna),
+  ARRAY_SIZE(room_prisontower),
   ARRAY_SIZE(room_fartzone)
 };
 #endif

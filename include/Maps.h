@@ -18,7 +18,7 @@ typedef struct
 	uint8_t  ring_count;
 } Map;
 
-#define MAP_COUNT 20
+#define MAP_COUNT 21
 extern Map g_mapList[MAP_COUNT+1];
 
 bool map_init 	(Server* server);

@@ -23,6 +23,9 @@
 #include <maps/FartZone.h>
 #include <maps/WoodDream.h>
 #include <maps/Marijuna.h>
+#include <maps/PrisonTower.h>
+
+const int red_ring_enable = 1;
 
 Map g_mapList[MAP_COUNT+1] =
 {
@@ -46,7 +49,8 @@ Map g_mapList[MAP_COUNT+1] =
 	{ CLRCODE_GRN "Haunting Dream",		{ hd_init,  map_tick, hd_tcpmsg,  map_left }, 1, 31 }, //17
 	{ CLRCODE_RED "Mystic Wood",		{ wd_init,  map_tick, map_tcpmsg, map_left }, 1, 26 }, //18
 	{ CLRCODE_GRN "Echidna Ruins",		{ mj_init,  map_tick, map_tcpmsg, map_left }, 1, 28+5 }, //19
-	{ CLRCODE_BLU "Fart Zone",			{ ft_init,	map_tick, ft_tcpmsg,  map_left }, 1, 15 }, //20
+	{ CLRCODE_PUR "Prison Tower", 		{ pt_init,  map_tick, map_tcpmsg, map_left }, 1, 20}, //20
+	{ CLRCODE_BLU "Fart Zone",			{ ft_init,	map_tick, ft_tcpmsg,  map_left }, 1, 15 }, //21
 };
 
 bool map_init(Server* server)
