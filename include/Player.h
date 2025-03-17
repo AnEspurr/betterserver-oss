@@ -70,6 +70,7 @@ typedef struct
 		uint16_t	damage_taken;
 		uint16_t	kills;
 	} stats;
+	//-------
 } Player;
 
 #define SET_FLAG(x, flag) x |= (flag)
