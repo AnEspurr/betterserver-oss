@@ -390,7 +390,7 @@ bool lobby_state_handle(PeerData* v, Packet* packet)
 				server_broadcast_ex(v->server, packet, true, v->id);
 				char buffer[512];
 				snprintf(buffer, 512, msg.value, v->nickname.value);
-				server_send_msg(v->server, v->peer, buffer);
+				server_broadcast_msg(v->server, buffer);
 			break;
 		}
 
